@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WinterLane project page by HIT PathFinder Lab." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>WinterLane | HIT PathFinder Lab</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">WinterLane</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#abstract">Abstract</a>
+        <a href="#dataset">Dataset</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#video">Video</a>
+        <a href="#citation">Citation</a>
+      </nav>
+
+      <button class="menu-button" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#abstract">Abstract</a>
+      <a href="#dataset">Dataset</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#video">Video</a>
+      <a href="#citation">Citation</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="eyebrow">HIT PathFinder Lab</div>
+
+        <h1>WinterLane</h1>
+
+        <p class="subtitle">
+          A Real-World Snowy-Road Lane-Detection Dataset and Framework
+        </p>
+
+        <p class="authors">
+          <a href="#">Chengzhe Jiao</a><sup>1</sup>,
+          <a href="#">Author Two</a><sup>1</sup>,
+          <a href="#">Author Three</a><sup>2</sup>
+        </p>
+
+        <p class="affiliations">
+          <sup>1</sup>Harbin Institute of Technology
+          &nbsp;&nbsp;
+          <sup>2</sup>Affiliation
+        </p>
+
+        <div class="button-row">
+          <a class="btn primary" href="#" target="_blank" rel="noreferrer">Paper</a>
+          <a class="btn" href="https://github.com/HIT-PathFinder-Lab/WinterLane_test" target="_blank" rel="noreferrer">Code</a>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Dataset</a>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Supplementary</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container">
+        <figure class="media-card teaser-card">
+          <img src="assets/images/teaser.svg" alt="WinterLane teaser placeholder" />
+          <figcaption>
+            Replace this placeholder with the final project teaser or your strongest qualitative visualization.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="abstract" class="section alt">
+      <div class="container narrow">
+        <h2>Abstract</h2>
+        <p class="lead">
+          WinterLane focuses on lane perception under challenging winter driving conditions.
+          The project introduces a real-world dashcam dataset with lane-instance annotations
+          for snowy urban and campus roads, together with an angle-guided lane detection framework.
+          This paragraph is intentionally concise for the demo page and can later be replaced by
+          the final abstract from the paper.
+        </p>
+      </div>
+    </section>
+
+    <section id="dataset" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>WinterLane Dataset</h2>
+          <p>
+            Representative snowy scenes and challenging non-snow subsets for evaluating
+            robustness in adverse winter driving environments.
+          </p>
+        </div>
+
+        <div class="media-grid three">
+          <figure class="media-card">
+            <img src="assets/images/snow-scene-1.svg" alt="Snow scene 1 placeholder" />
+            <figcaption>Representative snowy-road scene I</figcaption>
+          </figure>
+
+          <figure class="media-card">
+            <img src="assets/images/snow-scene-2.svg" alt="Snow scene 2 placeholder" />
+            <figcaption>Representative snowy-road scene II</figcaption>
+          </figure>
+
+          <figure class="media-card">
+            <img src="assets/images/snow-scene-3.svg" alt="Snow scene 3 placeholder" />
+            <figcaption>Representative snowy-road scene III</figcaption>
+          </figure>
+        </div>
+
+        <div class="subset-grid">
+          <article class="subset-card">
+            <span class="subset-index">01</span>
+            <h3>Normality</h3>
+            <p>Reference non-snow driving conditions.</p>
+          </article>
+
+          <article class="subset-card">
+            <span class="subset-index">02</span>
+            <h3>Glare</h3>
+            <p>Strong illumination and reflective road appearance.</p>
+          </article>
+
+          <article class="subset-card">
+            <span class="subset-index">03</span>
+            <h3>Nighttime</h3>
+            <p>Low-light scenes with reduced lane visibility.</p>
+          </article>
+
+          <article class="subset-card">
+            <span class="subset-index">04</span>
+            <h3>Faded Lane</h3>
+            <p>Long weak-evidence intervals and degraded markings.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Method</h2>
+          <p>
+            Angle-guided lane perception with complementary feature-level and prediction-level modeling.
+          </p>
+        </div>
+
+        <figure class="media-card large-figure">
+          <img src="assets/images/method.svg" alt="WinterLane method overview placeholder" />
+          <figcaption>
+            Replace with the final method overview figure from the paper.
+          </figcaption>
+        </figure>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-label">Feature level</div>
+            <h3>DASAM</h3>
+            <p>
+              Dynamic Angle-Aware Spatial Aggregation Module enhances feature aggregation
+              by introducing angle-aware spatial relationships for challenging lane structures.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-label">Prediction level</div>
+            <h3>MFLD</h3>
+            <p>
+              MFLD complements DASAM at the coordinate / prediction stage to improve
+              lane localization under degraded visual evidence.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Qualitative Results</h2>
+          <p>
+            Visual comparison with representative lane-detection baselines across challenging scenes.
+          </p>
+        </div>
+
+        <figure class="media-card large-figure">
+          <img src="assets/images/results.svg" alt="Qualitative results placeholder" />
+          <figcaption>
+            Replace with Fig. 8 or a redesigned comparison panel for the project page.
+          </figcaption>
+        </figure>
+
+        <div class="result-strip">
+          <span>GANet</span>
+          <span>UFLD</span>
+          <span>CLRNet</span>
+          <span>Ours</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Video Demonstration</h2>
+          <p>
+            Compressed MP4 clips can be embedded directly in GitHub Pages.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-placeholder">
+              <div>
+                <div class="play">▶</div>
+                <strong>Snowy Road Demo</strong>
+                <small>assets/videos/demo-snow.mp4</small>
+              </div>
+            </div>
+
+            <!-- Replace the placeholder above with:
+            <video controls muted loop playsinline preload="metadata">
+              <source src="assets/videos/demo-snow.mp4" type="video/mp4" />
+            </video>
+            -->
+          </article>
+
+          <article class="video-card">
+            <div class="video-placeholder">
+              <div>
+                <div class="play">▶</div>
+                <strong>Challenging Scene Demo</strong>
+                <small>assets/videos/demo-hard.mp4</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation" class="section">
+      <div class="container narrow">
+        <h2>Citation</h2>
+
+        <div class="citation-box">
+          <button id="copyCitation" class="copy-btn" type="button">Copy</button>
+          <pre id="citationText"><code>@article{winterlane2026,
+  title   = {WinterLane: ...},
+  author  = {Chengzhe Jiao and Author Two and Author Three},
+  journal = {...},
+  year    = {2026}
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container narrow">
+        <h2>Acknowledgements</h2>
+        <p class="lead">
+          Add funding information, institutional acknowledgements, and credits for
+          third-party datasets or code here.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>WinterLane · HIT PathFinder Lab</p>
+      <p>Hosted with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
